@@ -1,0 +1,140 @@
+///////////////////////////////
+// RESPONSIVE
+///////////////////////////////
+
+@media screen and (max-width: 1400px) {
+    /* Game Screen */
+
+    .game-screen {
+        .hand-wrap {
+            img {
+                max-width: 350px;
+                max-height: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* Game Screen */
+
+    .game-screen {
+        .hand-wrap {
+            img {
+                max-width: 300px;
+                max-height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    /* Game Screen */
+
+    .game-screen {
+        .hand-wrap {
+            img {
+                max-width: 250px;
+                max-height: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Game Screen */
+
+    .btn {
+        font-size: 20px;
+        min-width: 260px;
+        padding: 16px 30px 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Title Screen */
+
+    .btn-wrap {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        .btn {
+            margin-bottom: 20px;
+        }
+    }
+
+    /* Game Screen */
+
+    .game-screen {
+        .hand-wrap {
+            img {
+                max-width: 200px;
+                max-height: 200px;
+            }
+        }
+
+        .full-wrap {
+            flex-direction: column;
+
+            .half-wrap {
+                width: 100%;
+                padding: 0 20px 10px;
+                text-align: center;
+
+                .right-wrap {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Title Screen */
+
+    h1 {
+        font-size: 65px;
+    }
+
+    /* Game Screen */
+
+    .game-screen {
+        .hand-wrap {
+            img {
+                max-width: 140px;
+                max-height: 140px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Title Screen */
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .btn {
+        font-size: 18px;
+        min-width: 220px;
+        margin: 0 auto;
+        padding: 13px 30px 8px;
+    }
+
+    .title-screen {
+        .btn {
+            margin-bottom: 10px;
+        }
+    }
+
+    input[type=text] {
+        font-size: 20px;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+    }
+}

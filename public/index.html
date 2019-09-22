@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Rock - Paper - Scissors</title>
+		<title>Rock Paper Scissors | Tiffany Lam</title>
 		<meta charset="UTF-8" />
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
-		<h1>You are ready to go! :)</h1>
-		<h2>Good luck!</h2>
+		<div class="title-screen screen center">
+			<div>
+				<h1>Rock<br>Paper<br>Scissors</h1>
+				<p class="error-msg"></p>
+				<input type="text" placeholder="Enter your name..." class="username" maxlength="20"/>
+				<div class="btn-wrap">
+					<button class="btn" id="start-btn">Start Game</button>
+					<button class="btn" id="comp-btn">Computer Mode</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="game-screen screen">
+			<div class="left-wrap center side-wrap">
+				<div class="score-wrap player-score">
+					<p></p>
+					<h1></h1>
+				</div>
+				<div class="hand-wrap player-img">
+					<img src="../src/img/rock.png">
+				</div>
+			</div>
+			<div class="right-wrap center side-wrap">
+				<div class="score-wrap comp-score">
+					<p></p>
+					<h1></h1>
+				</div>
+				<div class="hand-wrap comp-img">
+					<img src="../src/img/rock.png">
+				</div>
+			</div>
+			<div class="full-wrap">
+				<div class="left-wrap half-wrap">
+					<div class="option-wrap">
+						<div option="rock">
+							<img src="../src/img/rock.png" alt="rock">
+						</div>
+						<div option="paper">
+							<img src="../src/img/paper.png" alt="paper">
+						</div>
+						<div option="scissors">
+							<img src="../src/img/scissors.png" alt="scissors">
+						</div>
+					</div>
+					<button class="btn comp-game">Play</button>
+				</div>
+				<div class="right-wrap half-wrap">
+					<div class="pusher">
+						<button class="btn restart-btn">Start a New Game</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="lightbox-wrapper">
+			<div class="center">
+				<h1></h1>
+				<button class="btn">Continue</button>
+			</div>
+		</div>
 	</body>
 </html>

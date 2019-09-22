@@ -1,8 +1,10 @@
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
-import logger from './logger';
+import start from './start';
+import titleScreen from './titleScreen';
 
 import '../css/index.scss';
 
-logger('it works well!');
+start();
+titleScreen();
